@@ -2,6 +2,9 @@ import discord
 from discord.ext import commands
 import random
 import time
+from bot_logic import memm
+import os
+       
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -34,6 +37,24 @@ async def rand(ctx, left: int, right: int):
 async def timer(ctx, left: int):
     time.sleep(left)
     await ctx.send("Время вышло")
+@bot.command()
+async def mem(ctx):
+    memeses = os.listdir('images') 
+    ghi = random.choice(memeses)
+    with open(f'images/{ghi}', 'rb') as f:
+            grf = discord.File(f)
+    await ctx.send(file=grf)
+@bot.command()
+async def rustmem(ctx):
+    rustes = os.listdir('rustmemes') 
+    ghii = random.choice(rustes)
+    with open(f'rustmemes/{ghii}', 'rb') as f1:
+            grff = discord.File(f1)
+    await ctx.send(file=grff)
+
+
+    
+
 
 @bot.command()
 async def repeat(ctx, times: int, content='repeating...'):
