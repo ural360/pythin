@@ -1,10 +1,14 @@
 Hello!
 Welcome to my reposetory!
 THere you can find my discord project ai_bot!
-First step: download ai_bot zip.
-Second step: unzip ai_bot zip.
+First step: download ai_bot.
+Second step: unzip ai_bot .
 Third step:open with python redactor main.py and cod.py, and install: tensorflow version 2.15.0, keras, numpy, Pillow, discord, and requstes.
 Final step: in main.py on line 114 write your discord bot token.
 Done!
 
-For funtions bot write !help1 to bot.
+Bot has !treedetect, bot can say what's this tree on image (can work, or don't work)
+!help1
+!heh
+!add can add numbers
+and more
